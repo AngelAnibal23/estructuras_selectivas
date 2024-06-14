@@ -9,7 +9,7 @@ int main(){
 	
 	int numero; 
 	
-	cout<<"Digite un numero para saber a que dia de la semana representa: "; 
+	cout<<"Digite un numero: "; 
 	cin>>numero;
 	
 	switch(numero){
@@ -20,7 +20,7 @@ int main(){
 	case 4: cout<<"\nEl dia es: Miercoles."; break; 
 	case 5: cout<<"\nEl dia es: Jueves."; break;
 	case 6: cout<<"\nEl dia es: Viernes."; break; 
-	default: cout<<"\nEl numero ingresado no representa a ningun dia de la semana."; break; 
+	default: cout<<"\nEl numero ingresado no es valido. "; break; 
 	}
 	return 0;
 }
