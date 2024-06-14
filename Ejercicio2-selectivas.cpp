@@ -8,6 +8,8 @@ using namespace std;
 int main(){
 	
 	int compra, precio_descto, precio_normal;
+	char letra; 
+	
 	
 		cout<<"Digite el monto de su compra: "; cin>>compra; 
 		
@@ -18,17 +20,15 @@ int main(){
 	
 		precio_descto= compra*(1-0.2); 
 		
-		precio_normal= compra*1; 
+		precio_normal= compra; 
 		
 	if(compra>1000){
-		cout<<"\nLe corresponde pagar el monto de: "<<precio_descto<<" soles."<<endl; 
+		cout<<"\nLe corresponde pagar el monto de: S/."<<precio_descto<<endl; 
 	}
 	else{
-		cout<<"\nEl monto total a pagar es de: "<<precio_normal<<" soles."<<endl;
+		cout<<"\nEl monto total a pagar es de: S/."<<precio_normal<<endl;
 	}
 	}
-	
-	
 	
 	return 0;
 }
