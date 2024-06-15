@@ -14,14 +14,21 @@ int main(){
 	char sexo; 
 	
 	cout<<"Ingrese su edad: "; cin>>edad;
+	
+	if(edad<0){
+		cout<<endl<<"La edad ingresada no es valida. "; 
+		
+		return 1; 
+	}
+	
 	cout<<"Ingrese su sexo (m para masculino y f para femenino): "; cin>>sexo;  
 	
 	
-	if(sexo == 'm'){
+	if(sexo == 'm' ||  sexo== 'M'){
 		
 		num_pulsaciones= (210-edad)/10; 
 	}
-	else if (sexo == 'f'){
+	else if (sexo == 'f' || sexo== 'F'){
 	
 		num_pulsaciones= (220-edad)/10;
 	}
