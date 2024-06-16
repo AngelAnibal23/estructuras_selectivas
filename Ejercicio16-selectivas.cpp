@@ -14,7 +14,7 @@ int main(){
 	
 	cout<<"Ingrese el credito actual de su tarjeta: "; 
 	cin>>credito_actual; 
-	cout<<"\nSegun el tipo de su tarjeta digite: (1 , 2 , 3 , ...): "; 
+	cout<<"\nDigite el numero de su tarjeta: (1 , 2 , 3 ...): "; 
 	cin>>tipo_tarjeta; 
 	
 	if(tipo_tarjeta== 1){
@@ -34,6 +34,7 @@ int main(){
 		
 		return 0;
 	}
+	
 	
 	return 0; 
 }
