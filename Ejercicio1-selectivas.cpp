@@ -13,6 +13,11 @@ using namespace std;
 		cout<<"Digite su segunda calificacion: "; cin>>nota2; 
 		cout<<"Digite su tercera calificacion: "; cin>>nota3; 
 		
+		if(nota1<0 || nota2<0 || nota3<0){
+			cout<<"La nota ingresada es invalida. "; 	
+		}
+		else{
+	
 		promedio=(nota1+nota2+nota3)/3; 
 		
 		if (promedio>=70){
@@ -21,7 +26,7 @@ using namespace std;
 		else{
 			cout<<"\nUsted desaprobo. "; 
 	    }
-				
+		}	
 		return 0; 
 	}
 
