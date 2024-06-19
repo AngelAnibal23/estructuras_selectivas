@@ -16,13 +16,19 @@ int main(){
 	cout<<"Digite el ultimo lado del triangulo: "; 
 	cin>>l3;
 	
+	if(l1<0 || l2<0 || l3<0){
+		cout<<endl<<"El lado ingresado no es valido. "; 
+		return 1; 
+	}
+	
+	
 	if(l3<l1+l2 && l3>l1-l2){
 		
 		cout<<"Las longitudes brindadas, si pueden formar un triangulo."; 
 		
 	}
 	else{
-		cout<<"Las longitudes brindadas, no pueden formar un triangulo."; 
+		cout<<endl<<"Las longitudes brindadas, no pueden formar un triangulo."; 
 	}
 	
 	
