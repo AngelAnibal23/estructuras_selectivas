@@ -5,9 +5,23 @@ S/.1000 ¿Cuál será la cantidad que pagara una persona por su compra?
 
 #include <iostream> 
 using namespace std; 
+
+int precioporcompra(int x){
+	int precio_correspondiente; 
+	
+	if(x>1000){
+		precio_correspondiente=true; 
+	}
+	else{
+		precio_correspondiente=false; 
+	}
+	
+	return precio_correspondiente; 
+}
+
 int main(){
 	
-	int compra, precio_descto, precio_normal;
+	int compra, precio_descto, precio_normal, retorno;
 	char letra; 
 	
 	
@@ -22,10 +36,12 @@ int main(){
 		
 		precio_normal= compra; 
 		
-	if(compra>1000){
+	retorno=precioporcompra(compra);
+		
+	if(retorno==1){
 		cout<<"\nLe corresponde pagar el monto de: S/."<<precio_descto<<endl; 
 	}
-	else{
+	else if(retorno == 0){
 		cout<<"\nEl monto total a pagar es de: S/."<<precio_normal<<endl;
 	}
 	}
