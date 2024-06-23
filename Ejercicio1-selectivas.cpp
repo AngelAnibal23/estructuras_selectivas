@@ -3,12 +3,14 @@ Ejercicio 1: Determinar si un alumno aprueba o reprueba un curso, sabiendo que a
 promedio de tres calificaciones es mayor o igual a 70; reprueba en caso contrario.
 */
 #include <iostream> 
+#include <stdio.h>
 using namespace std; 
 
 	int main(){
 		
-		int nota1, nota2, nota3, promedio; 
-		
+		int nota1, nota2, nota3, promedio;
+		string v; 
+		do{
 		cout<<"Digite su primera calificacion: "; cin>>nota1; 
 		cout<<"Digite su segunda calificacion: "; cin>>nota2; 
 		cout<<"Digite su tercera calificacion: "; cin>>nota3; 
@@ -21,12 +23,15 @@ using namespace std;
 		promedio=(nota1+nota2+nota3)/3; 
 		
 		if (promedio>=70){
-			cout<<"\nUsted aprobo. ";
+			cout<<"\nUsted aprobo. "<<endl;
  	    }
 		else{
-			cout<<"\nUsted desaprobo. "; 
+			cout<<"\nUsted desaprobo. "<<endl; 
 	    }
-		}	
-		return 0; 
+		}
+		cout<<"volver a revisar? si o no"<<endl;
+		cin>>v;
+		}while (v=="si");
+		return 0;
 	}
 
