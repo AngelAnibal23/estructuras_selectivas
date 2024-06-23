@@ -28,7 +28,7 @@ int main(){
 		cout<<"Digite el monto de su compra: "; cin>>compra; 
 		
 	if(compra<0){
-			cout<<endl<<"El monto ingresado no es valido. "; 
+			cout<<endl<<"El monto ingresado es invalido. "; 
 	}
 	else{
 	
